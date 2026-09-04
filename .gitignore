@@ -1,0 +1,15 @@
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Dependencias (por si mas adelante se suma un build real)
+node_modules/
+
+# Salidas temporales
+artifact.html

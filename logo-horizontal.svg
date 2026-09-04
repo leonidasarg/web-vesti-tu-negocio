@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="640" height="160" role="img" aria-label="Vestí Tu Negocio">
+  <title>Vestí Tu Negocio</title>
+  <g transform="translate(8 16) scale(1.5)">
+    <rect x="1.5" y="1.5" width="29" height="29" rx="7" fill="#D6006E"/>
+    <circle cx="8" cy="8" r="1.9" fill="#FFFFFF"/>
+    <path d="M8.6 10.8h4.9l2.5 5.4 2.5-5.4h4.9L16 24.6Z" fill="#FFFFFF"/>
+  </g>
+  <text x="66" y="40" font-family="Archivo, 'Archivo Black', 'Arial Black', Helvetica, sans-serif"
+        font-weight="800" font-size="26" letter-spacing="0.5" fill="#15131A">VESTÍ</text>
+  <text x="66" y="62" font-family="Archivo, 'Archivo Black', 'Arial Black', Helvetica, sans-serif"
+        font-weight="800" font-size="19" letter-spacing="1.6" fill="#D6006E">TU NEGOCIO</text>
+</svg>

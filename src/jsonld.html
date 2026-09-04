@@ -1,0 +1,166 @@
+<!-- ============================================================
+     DATOS ESTRUCTURADOS (schema.org)
+     EDITAR: teléfono, dominio, redes y dirección antes de publicar
+     ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LocalBusiness", "ClothingStore"],
+      "@id": "https://www.vestitunegocio.com.ar/#negocio",
+      "name": "Vestí Tu Negocio",
+      "description": "Remeras, buzos y gorras personalizadas con estampado DTF de alta calidad para comercios y emprendimientos en Córdoba Capital, Argentina.",
+      "url": "https://www.vestitunegocio.com.ar/",
+      "image": "https://www.vestitunegocio.com.ar/og-image.jpg",
+      "logo": "https://www.vestitunegocio.com.ar/logo.svg",
+      "telephone": "+5493510000000",
+      "email": "hola@vestitunegocio.com.ar",
+      "priceRange": "$$",
+      "currenciesAccepted": "ARS",
+      "paymentAccepted": "Efectivo, Transferencia bancaria, Mercado Pago",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Córdoba",
+        "addressRegion": "Córdoba",
+        "addressCountry": "AR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -31.4201,
+        "longitude": -64.1888
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Córdoba" },
+        { "@type": "State", "name": "Provincia de Córdoba" },
+        { "@type": "Country", "name": "Argentina" }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "13:00"
+        }
+      ],
+      "sameAs": ["https://instagram.com/vestitunegocio"],
+      "knowsLanguage": "es-AR",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Indumentaria personalizada",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Remeras personalizadas con logo",
+              "description": "Remeras de algodón peinado 180 g/m² estampadas en DTF con el logo y los colores del negocio. Talles S al XXXL."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Buzos personalizados con logo",
+              "description": "Buzos de frisa 380 g/m², con o sin capucha, estampados en DTF a todo color. Talles S al XXL."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Gorras personalizadas con logo",
+              "description": "Gorras de gabardina clásicas y trucker con cierre regulable, personalizadas con la marca del negocio."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.vestitunegocio.com.ar/#servicio",
+      "name": "Estampado DTF de indumentaria para empresas en Córdoba",
+      "serviceType": "Estampado textil DTF",
+      "provider": { "@id": "https://www.vestitunegocio.com.ar/#negocio" },
+      "areaServed": { "@type": "City", "name": "Córdoba" },
+      "description": "Personalización de remeras, buzos, gorras y ropa de trabajo con estampado DTF a todo color, desde una unidad, con entrega en 5 a 7 días hábiles."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.vestitunegocio.com.ar/#sitio",
+      "url": "https://www.vestitunegocio.com.ar/",
+      "name": "Vestí Tu Negocio",
+      "inLanguage": "es-AR",
+      "publisher": { "@id": "https://www.vestitunegocio.com.ar/#negocio" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.vestitunegocio.com.ar/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuál es la cantidad mínima de compra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Una sola prenda. El DTF no necesita marcos ni matrices, así que podés pedir dos remeras para probar la calidad y después ampliar el pedido. A partir de 10 unidades el precio por prenda baja de forma escalonada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto tarda el pedido?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Entre 5 y 7 días hábiles desde que se aprueba el diseño y se deja la seña. Las urgencias suelen resolverse en 48 a 72 horas con un recargo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿En qué formato tengo que mandar el logo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lo ideal es un vector (AI, SVG, PDF, EPS) o un PNG con fondo transparente de al menos 300 dpi. Si solo tenés el logo en baja calidad, lo redibujamos sin cargo y te lo entregamos en vector."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo llevar mis propias prendas para estampar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Estampamos prendas provistas por el cliente siempre que sean de algodón, poliéster o mezcla y estén sin uso."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo se lava la ropa estampada en DTF?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Del revés, con agua fría o tibia y sin lavandina. No planchar directamente sobre la estampa. Con ese cuidado supera los 50 lavados sin cuartearse."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Hacen envíos fuera de Córdoba?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, se despacha a todo el país por correo o transporte. En Córdoba Capital la entrega se coordina con turno previo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué es exactamente el DTF?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Direct to Film: el diseño se imprime sobre una película de PET con tintas de color más una base de blanco, se le aplica polvo adhesivo, se cura y se transfiere a la prenda con plancha térmica a unos 160 °C durante 15 segundos. La base de blanco permite que un logo a todo color se vea nítido incluso sobre tela negra."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>

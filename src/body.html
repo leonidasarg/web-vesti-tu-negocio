@@ -1,0 +1,713 @@
+<!-- ============================================================
+     SVG reutilizables (marca y prendas)
+     ============================================================ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="mark" viewBox="0 0 32 32">
+      <rect x="1.5" y="1.5" width="29" height="29" rx="7" fill="currentColor"></rect>
+      <circle cx="8" cy="8" r="1.9" fill="var(--paper)"></circle>
+      <path d="M8.6 10.8h4.9l2.5 5.4 2.5-5.4h4.9L16 24.6Z" fill="var(--paper)"></path>
+    </symbol>
+
+    <!-- luz arriba-izquierda, sombra abajo-derecha -->
+    <linearGradient id="gBody" x1="0.05" y1="0" x2="0.95" y2="0.85">
+      <stop offset="0" stop-color="var(--gmt-1)"></stop>
+      <stop offset="0.5" stop-color="var(--gmt-2)"></stop>
+      <stop offset="1" stop-color="var(--gmt-3)"></stop>
+    </linearGradient>
+    <linearGradient id="gSleeve" x1="0" y1="0" x2="1" y2="0.6">
+      <stop offset="0" stop-color="var(--gmt-2)"></stop>
+      <stop offset="1" stop-color="var(--gmt-4)"></stop>
+    </linearGradient>
+    <linearGradient id="gRib" x1="0" y1="0" x2="1" y2="0.4">
+      <stop offset="0" stop-color="var(--gmt-2)"></stop>
+      <stop offset="1" stop-color="var(--gmt-4)"></stop>
+    </linearGradient>
+
+    <!-- ===== REMERA ===== -->
+    <symbol id="tee" viewBox="0 0 240 280">
+      <ellipse cx="120" cy="262" rx="74" ry="8" fill="var(--ink)" opacity=".12"></ellipse>
+      <g stroke="var(--gmt-line)" stroke-width="2.4" stroke-linejoin="round">
+        <path d="M64 54 28 78c-4 8-4 28 0 36l28 12c0-26 4-52 8-72Z" fill="url(#gSleeve)"></path>
+        <path d="M176 54l36 24c4 8 4 28 0 36l-28 12c0-26-4-52-8-72Z" fill="url(#gSleeve)"></path>
+        <path d="M96 42c8 20 40 20 48 0l32 12c6 40 8 70 8 100 0 34-2 66-4 96-38 8-82 8-120 0-2-30-4-62-4-96 0-30 2-60 8-100Z" fill="url(#gBody)"></path>
+      </g>
+      <g fill="none" stroke="var(--gmt-4)" opacity=".55">
+        <path d="M64 128c10 8 15 20 15 33" stroke-width="2"></path>
+        <path d="M176 128c-10 8-15 20-15 33" stroke-width="2"></path>
+        <path d="M93 168c-3 28-4 56-3 84" stroke-width="1.8" opacity=".7"></path>
+        <path d="M147 168c3 28 4 56 3 84" stroke-width="1.8" opacity=".7"></path>
+      </g>
+      <path d="M158 62c12 42 14 128 10 188 8-1 14-2 20-3 2-30 4-62 4-96 0-30-2-60-8-100Z" fill="var(--gmt-4)" opacity=".35"></path>
+      <g fill="none" stroke-linecap="round">
+        <path d="M96 42c8 20 40 20 48 0" stroke="var(--gmt-4)" stroke-width="9"></path>
+        <path d="M96 42c8 20 40 20 48 0" stroke="var(--gmt-line)" stroke-width="9" stroke-dasharray="1.4 4" opacity=".28"></path>
+        <path d="M96 42c8 20 40 20 48 0" stroke="var(--gmt-line)" stroke-width="2.4" opacity=".9"></path>
+      </g>
+    </symbol>
+
+    <!-- ===== BUZO ===== -->
+    <symbol id="hoodie" viewBox="0 0 240 280">
+      <ellipse cx="120" cy="266" rx="76" ry="8" fill="var(--ink)" opacity=".12"></ellipse>
+      <g stroke="var(--gmt-line)" stroke-width="2.4" stroke-linejoin="round">
+        <path d="M90 54c-6-36 66-36 60 0-2 16-14 26-30 26s-28-10-30-26Z" fill="var(--gmt-4)"></path>
+        <path d="M58 64 24 90c-5 10-3 34 1 44l30 10c0-30 0-58 3-80Z" fill="url(#gSleeve)"></path>
+        <path d="M182 64l34 26c5 10 3 34-1 44l-30 10c0-30 0-58-3-80Z" fill="url(#gSleeve)"></path>
+        <path d="M26 130c10 4 20 6 29 7l-1 20c-10-1-20-3-30-7Z" fill="url(#gRib)"></path>
+        <path d="M214 130c-10 4-20 6-29 7l1 20c10-1 20-3 30-7Z" fill="url(#gRib)"></path>
+        <path d="M92 50c6 18 46 18 52 0l38 14c6 42 8 74 8 104 0 32-2 60-4 84-42 8-90 8-132 0-2-24-4-52-4-84 0-30 2-62 8-104Z" fill="url(#gBody)"></path>
+        <path d="M56 232c42 8 86 8 128 0l-2 26c-42 8-86 8-124 0Z" fill="url(#gRib)"></path>
+      </g>
+      <path d="M160 70c10 44 12 128 8 186 8-1 14-2 20-3 2-24 4-52 4-84 0-30-2-62-8-104Z" fill="var(--gmt-4)" opacity=".32"></path>
+      <path d="M82 170c26-5 50-5 76 0l-6 46c-22 5-42 5-64 0Z" fill="var(--gmt-4)" opacity=".38" stroke="var(--gmt-line)" stroke-width="2.2" stroke-linejoin="round"></path>
+      <g fill="none" stroke="var(--gmt-line)" stroke-width="2.4" stroke-linecap="round">
+        <path d="M92 50c6 18 46 18 52 0"></path>
+        <path d="M105 76c-2 22-2 36-2 46"></path>
+        <path d="M135 76c2 22 2 36 2 46"></path>
+      </g>
+      <circle cx="103" cy="124" r="3.4" fill="var(--gmt-line)"></circle>
+      <circle cx="137" cy="124" r="3.4" fill="var(--gmt-line)"></circle>
+      <g fill="none" stroke="var(--gmt-4)" stroke-width="1.8" opacity=".5">
+        <path d="M64 142c8 8 12 18 12 28"></path>
+        <path d="M176 142c-8 8-12 18-12 28"></path>
+      </g>
+    </symbol>
+
+    <!-- ===== GORRA ===== -->
+    <symbol id="cap" viewBox="0 0 260 190">
+      <ellipse cx="142" cy="172" rx="90" ry="8" fill="var(--ink)" opacity=".12"></ellipse>
+      <g stroke="var(--gmt-line)" stroke-width="2.4" stroke-linejoin="round">
+        <path d="M210 120c34-4 52 12 46 30-16 12-52 10-64-4Z" fill="var(--gmt-4)"></path>
+        <path d="M46 128C46 66 82 30 130 30s84 36 84 98c-34 12-134 12-168 0Z" fill="url(#gBody)"></path>
+        <path d="M46 128c34 12 134 12 168 0l-1 18c-34 12-132 12-166 0Z" fill="url(#gRib)"></path>
+      </g>
+      <path d="M164 36c26 16 50 46 50 92-14 5-32 8-50 9Z" fill="var(--gmt-4)" opacity=".3"></path>
+      <g fill="none" stroke="var(--gmt-4)" stroke-width="2" opacity=".55">
+        <path d="M130 30c-24 30-32 66-32 104"></path>
+        <path d="M130 30c24 30 32 66 32 104"></path>
+      </g>
+      <path d="M212 124c26 0 40 12 38 26" fill="none" stroke="var(--gmt-line)" stroke-width="1.8" opacity=".35"></path>
+      <circle cx="130" cy="28" r="6.5" fill="var(--gmt-4)" stroke="var(--gmt-line)" stroke-width="2.2"></circle>
+      <circle cx="104" cy="80" r="2.6" fill="var(--gmt-line)" opacity=".35"></circle>
+      <circle cx="156" cy="80" r="2.6" fill="var(--gmt-line)" opacity=".35"></circle>
+    </symbol>
+
+    <!-- ===== ICONOS DE LA PROPUESTA DE VALOR ===== -->
+    <symbol id="ico-percha" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 9V7.6a2.2 2.2 0 1 1 2.2-2.2"></path>
+        <path d="M12 9 3.4 15.1a1.3 1.3 0 0 0 .8 2.4h15.6a1.3 1.3 0 0 0 .8-2.4L12 9Z"></path>
+      </g>
+    </symbol>
+    <symbol id="ico-registro" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.6">
+        <circle cx="9" cy="9.6" r="5.2"></circle>
+        <circle cx="15" cy="9.6" r="5.2"></circle>
+        <circle cx="12" cy="14.8" r="5.2"></circle>
+      </g>
+    </symbol>
+    <symbol id="ico-lavado" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3.2 9.4h17.6v6.4a4 4 0 0 1-4 4H7.2a4 4 0 0 1-4-4V9.4Z"></path>
+        <path d="M3.2 9.4 6 5.6A2.6 2.6 0 0 1 8.1 4.5h.5"></path>
+        <path d="M6.6 14.4c1.6-1.2 3.2-1.2 4.8 0s3.2 1.2 4.8 0"></path>
+      </g>
+    </symbol>
+    <symbol id="ico-cordoba" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 21.2s7.2-6.6 7.2-11.4a7.2 7.2 0 1 0-14.4 0c0 4.8 7.2 11.4 7.2 11.4Z"></path>
+        <circle cx="12" cy="9.6" r="2.7"></circle>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="#inicio" aria-label="Vestí Tu Negocio, inicio">
+      <svg class="brand-mark" width="34" height="34" style="color:var(--magenta)" aria-hidden="true"><use href="#mark"></use></svg>
+      <span class="brand-name">Vestí<em>Tu Negocio</em></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#productos">Productos</a>
+      <a href="#dtf">Por qué DTF</a>
+      <a href="#proceso">Cómo trabajamos</a>
+      <a href="#rubros">Rubros</a>
+      <a href="#faq">Preguntas</a>
+    </nav>
+    <a class="btn btn-primary btn-sm header-cta" href="#presupuesto">Pedir presupuesto</a>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <!-- ==========================================================
+       HERO
+       ========================================================== -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="tag-chip"><b>DTF</b> · Córdoba Capital · Envíos a todo el país</p>
+        <h1 class="d1">Remeras, buzos y gorras <span class="reg">personalizadas</span> para tu negocio</h1>
+        <p class="lead">Tu logo, tus colores y el nombre de tu equipo, estampados en DTF de alta calidad. Que tu local se vea igual de profesional desde el mostrador hasta la calle, sin pedidos mínimos imposibles.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary js-wa" data-wa-text="Hola! Quiero un presupuesto de indumentaria para mi negocio." href="#presupuesto">Pedir presupuesto por WhatsApp</a>
+          <a class="btn btn-ghost" href="#productos">Ver productos</a>
+        </div>
+        <ul class="hero-specs">
+          <li><span class="k">Mínimo</span><span class="v">Desde 1 prenda</span></li>
+          <li><span class="k">Entrega</span><span class="v">5 a 7 días hábiles</span></li>
+          <li><span class="k">Colores</span><span class="v">Full color, sin recargo</span></li>
+          <li><span class="k">Respuesta</span><span class="v">Presupuesto en 24 h</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-art">
+        <svg class="plate" viewBox="0 0 300 300" role="img" aria-label="Remera de trabajo estampada con el logo de un negocio">
+          <!-- marcas de registro, como en una plancha de impresión -->
+          <g stroke="var(--line-strong)" stroke-width="1.5" fill="none">
+            <path d="M14 8v12M8 14h12M286 8v12M280 14h12M14 280v12M8 286h12M286 280v12M280 286h12"></path>
+          </g>
+          <g transform="translate(42 16) scale(0.88)">
+            <use href="#tee" width="240" height="280"></use>
+            <!-- estampa sobre el pecho -->
+            <g transform="translate(80 98)">
+              <svg width="36" height="36" x="22" y="0" style="color:var(--magenta)"><use href="#mark"></use></svg>
+              <rect x="0" y="46" width="80" height="10" rx="1.5" fill="var(--ink)"></rect>
+              <rect x="12" y="62" width="56" height="8" rx="1.5" fill="var(--cyan)"></rect>
+            </g>
+          </g>
+        </svg>
+        <p class="badge"><strong>Ficha de estampa</strong>DTF · tinta blanca base<br>Plancha 160 °C · 15 s<br>Lavados de prueba: 50+</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       PROPUESTA DE VALOR
+       ========================================================== -->
+  <section class="band band-alt" id="propuesta">
+    <div class="wrap">
+      <div class="sect-head">
+        <p class="eyebrow">La propuesta</p>
+        <h2 class="d2">Un negocio uniformado se ve más grande de lo que es</h2>
+        <p class="lead">No vendemos remeras: armamos la identidad visual que tu equipo usa todos los días. Vos mandás el logo, nosotros nos ocupamos del resto.</p>
+      </div>
+      <div class="value-grid">
+        <article class="value">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-percha"></use></svg>
+          <span class="k">Sin mínimos</span>
+          <h3>Desde una sola prenda</h3>
+          <p>Arrancá con dos remeras para probar y ampliá cuando entre gente nueva al equipo. No tenés que comprar 50 unidades para acceder a un buen precio.</p>
+        </article>
+        <article class="value">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-registro"></use></svg>
+          <span class="k">Color sin límite</span>
+          <h3>Tu logo tal cual es</h3>
+          <p>Degradés, fotos, sombras y todos los colores de tu marca en una sola pasada. En DTF no se cobra por color adicional como en serigrafía.</p>
+        </article>
+        <article class="value">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-lavado"></use></svg>
+          <span class="k">Durabilidad</span>
+          <h3>Aguanta el uso diario</h3>
+          <p>Estampa flexible que no se cuartea ni se despega con el lavado frecuente. Pensada para cocina, taller, gimnasio y mostrador.</p>
+        </article>
+        <article class="value">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-cordoba"></use></svg>
+          <span class="k">Cerca tuyo</span>
+          <h3>Producción en Córdoba</h3>
+          <p>Coordinás por WhatsApp, ves el diseño antes de imprimir y retirás en Córdoba Capital. Al interior, despacho por correo o transporte.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       PRODUCTOS
+       ========================================================== -->
+  <section class="band" id="productos">
+    <div class="wrap">
+      <div class="sect-head">
+        <p class="eyebrow">Productos</p>
+        <h2 class="d2">Qué vestimos</h2>
+        <p class="lead">Prendas de calidad comercial, listas para estampar con tu marca. También estampamos prendas que traigas vos.</p>
+      </div>
+      <div class="prod-grid">
+        <article class="prod">
+          <div class="prod-art">
+            <svg viewBox="0 0 240 280" role="img" aria-label="Remera de algodón personalizada con logo">
+              <use href="#tee" width="240" height="280"></use>
+              <g transform="translate(86 104)">
+                <svg width="30" height="30" x="19" y="0" style="color:var(--magenta)"><use href="#mark"></use></svg>
+                <rect x="0" y="38" width="68" height="9" rx="1.5" fill="var(--ink)"></rect>
+                <rect x="11" y="52" width="46" height="7" rx="1.5" fill="var(--cyan)"></rect>
+              </g>
+            </svg>
+          </div>
+          <div class="prod-body">
+            <h3>Remeras</h3>
+            <p>Algodón peinado con buena caída, ideal para atención al público y para regalar a clientes.</p>
+            <dl>
+              <dt>Gramaje</dt><dd>180 g/m²</dd>
+              <dt>Talles</dt><dd>S al XXXL</dd>
+              <dt>Estampa</dt><dd>Pecho, espalda y manga</dd>
+            </dl>
+          </div>
+        </article>
+
+        <article class="prod">
+          <div class="prod-art">
+            <svg viewBox="0 0 240 280" role="img" aria-label="Buzo de frisa personalizado con logo">
+              <use href="#hoodie" width="240" height="280"></use>
+              <g transform="translate(86 102)">
+                <svg width="28" height="28" x="20" y="0" style="color:var(--cyan)"><use href="#mark"></use></svg>
+                <rect x="0" y="36" width="68" height="9" rx="1.5" fill="var(--ink)"></rect>
+                <rect x="11" y="50" width="46" height="7" rx="1.5" fill="var(--magenta)"></rect>
+              </g>
+            </svg>
+          </div>
+          <div class="prod-body">
+            <h3>Buzos</h3>
+            <p>Frisa interior, con o sin capucha. La prenda que más se usa afuera del local: publicidad que camina.</p>
+            <dl>
+              <dt>Gramaje</dt><dd>380 g/m²</dd>
+              <dt>Talles</dt><dd>S al XXL</dd>
+              <dt>Estampa</dt><dd>Pecho, espalda y capucha</dd>
+            </dl>
+          </div>
+        </article>
+
+        <article class="prod">
+          <div class="prod-art">
+            <svg viewBox="0 0 260 190" role="img" aria-label="Gorra personalizada con logo bordado o estampado">
+              <use href="#cap" width="260" height="190"></use>
+              <g transform="translate(98 58)">
+                <svg width="26" height="26" x="16" y="0" style="color:var(--magenta)"><use href="#mark"></use></svg>
+                <rect x="0" y="34" width="58" height="8" rx="1.5" fill="var(--ink)"></rect>
+                <rect x="10" y="47" width="38" height="6" rx="1.5" fill="var(--cyan)"></rect>
+              </g>
+            </svg>
+          </div>
+          <div class="prod-body">
+            <h3>Gorras</h3>
+            <p>Gabardina con cierre regulable. Resuelven el uniforme de cocina, delivery y trabajo al aire libre.</p>
+            <dl>
+              <dt>Modelos</dt><dd>Clásica y trucker</dd>
+              <dt>Talle</dt><dd>Único regulable</dd>
+              <dt>Estampa</dt><dd>Frente y lateral</dd>
+            </dl>
+          </div>
+        </article>
+      </div>
+      <p class="lead" style="margin-top:2rem">¿Necesitás algo más? También hacemos <strong>camisas de trabajo, chombas, delantales, camperas rompeviento, totebags y merch para vender en tu local</strong>. Consultanos y lo cotizamos.</p>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       POR QUÉ DTF
+       ========================================================== -->
+  <section class="band band-alt" id="dtf">
+    <div class="wrap">
+      <div class="sect-head">
+        <p class="eyebrow">La técnica</p>
+        <h2 class="d2">Por qué estampamos en DTF</h2>
+        <p class="lead">DTF (<em>Direct to Film</em>) imprime el diseño sobre una película de PET con tinta y una base de blanco, y se transfiere a la prenda con plancha a 160&nbsp;°C. Por eso rinde en tiradas chicas, sobre cualquier color de tela y con todo el detalle del logo.</p>
+      </div>
+      <div class="table-scroll">
+        <table>
+          <caption>Comparativa de técnicas de estampado para indumentaria de trabajo</caption>
+          <thead>
+            <tr>
+              <th scope="col">Criterio</th>
+              <th scope="col" class="hl">DTF</th>
+              <th scope="col">Serigrafía</th>
+              <th scope="col">Bordado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Cantidad mínima</th>
+              <td class="hl">1 prenda</td>
+              <td>20 a 50 prendas</td>
+              <td>10 a 20 prendas</td>
+            </tr>
+            <tr>
+              <th scope="row">Costo por color extra</th>
+              <td class="hl">Sin recargo</td>
+              <td>Un marco por color</td>
+              <td>Un hilo por color</td>
+            </tr>
+            <tr>
+              <th scope="row">Detalle fotográfico</th>
+              <td class="hl">Degradés y fotos</td>
+              <td>Limitado</td>
+              <td>Solo formas simples</td>
+            </tr>
+            <tr>
+              <th scope="row">Telas compatibles</th>
+              <td class="hl">Algodón, poliéster y mezclas</td>
+              <td>Según tinta</td>
+              <td>Telas con cuerpo</td>
+            </tr>
+            <tr>
+              <th scope="row">Sobre tela oscura</th>
+              <td class="hl">Sí, con base de blanco</td>
+              <td>Sí, con más pasadas</td>
+              <td>Sí</td>
+            </tr>
+            <tr>
+              <th scope="row">Tiempo de producción</th>
+              <td class="hl">5 a 7 días hábiles</td>
+              <td>10 a 15 días hábiles</td>
+              <td>10 a 20 días hábiles</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="lead" style="margin-top:1.4rem">¿Necesitás 200 remeras de un solo color? Te lo decimos derecho: ahí conviene serigrafía y te ayudamos a coordinarla. Nuestro fuerte son las tiradas chicas y medianas con logo a todo color.</p>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       PROCESO
+       ========================================================== -->
+  <section class="band" id="proceso">
+    <div class="wrap">
+      <div class="sect-head">
+        <p class="eyebrow">Cómo trabajamos</p>
+        <h2 class="d2">De tu logo a tu equipo vestido</h2>
+      </div>
+      <div class="steps">
+        <article class="step">
+          <span class="n" aria-hidden="true">1</span>
+          <h3>Nos contás qué necesitás</h3>
+          <p>Rubro, prendas, cantidades y talles. Si no tenés el logo en buena calidad, lo redibujamos sin cargo.</p>
+        </article>
+        <article class="step">
+          <span class="n" aria-hidden="true">2</span>
+          <h3>Te mandamos el diseño</h3>
+          <p>Recibís una vista previa con la estampa aplicada sobre la prenda y el color elegido. Ajustamos hasta que te guste.</p>
+        </article>
+        <article class="step">
+          <span class="n" aria-hidden="true">3</span>
+          <h3>Aprobás y producimos</h3>
+          <p>Con el 50 % de seña entramos a producción. Imprimimos, planchamos y controlamos prenda por prenda.</p>
+        </article>
+        <article class="step">
+          <span class="n" aria-hidden="true">4</span>
+          <h3>Retirás o te lo enviamos</h3>
+          <p>Entrega en Córdoba Capital con coordinación previa, o despacho al interior por correo y transporte.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       RUBROS
+       ========================================================== -->
+  <section class="band band-alt" id="rubros">
+    <div class="wrap">
+      <div class="sect-head">
+        <p class="eyebrow">Para quién</p>
+        <h2 class="d2">Rubros que ya vestimos</h2>
+        <p class="lead">Si tu equipo atiende gente, tu ropa está hablando por vos. Trabajamos con negocios de toda Córdoba:</p>
+      </div>
+      <ul class="chips">
+        <li>Bares y restaurantes</li>
+        <li>Cafeterías</li>
+        <li>Gimnasios y estudios</li>
+        <li>Peluquerías y barberías</li>
+        <li>Talleres mecánicos</li>
+        <li>Ferreterías y corralones</li>
+        <li>Kioscos y almacenes</li>
+        <li>Delivery y logística</li>
+        <li>Estética y salud</li>
+        <li>Inmobiliarias</li>
+        <li>Constructoras</li>
+        <li>Escuelas y clubes</li>
+        <li>Emprendimientos</li>
+        <li>Eventos y ferias</li>
+      </ul>
+
+      <div class="promise" style="margin-top:clamp(40px,5vw,64px)">
+        <div>
+          <h3>Vista previa antes de imprimir</h3>
+          <p>Nada entra a producción sin que lo apruebes. Si el diseño no te convence, lo rehacemos.</p>
+        </div>
+        <div>
+          <h3>Precio cerrado por escrito</h3>
+          <p>El presupuesto detalla prenda, talles, cantidad de estampas y plazo. No aparecen costos nuevos después.</p>
+        </div>
+        <div>
+          <h3>Reposición sin arrancar de cero</h3>
+          <p>Guardamos tu archivo listo para producción. Cuando sumás gente, repetís el pedido en dos mensajes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       COTIZADOR / CONTACTO
+       ========================================================== -->
+  <section class="band" id="presupuesto">
+    <div class="wrap quote">
+      <div>
+        <p class="eyebrow">Presupuesto</p>
+        <h2 class="d2">Contanos qué necesitás</h2>
+        <p class="lead" style="margin-top:1rem">Completá los datos y se arma solo el mensaje de WhatsApp. Respondemos dentro de las 24 horas hábiles con precio, plazo y una propuesta de diseño.</p>
+        <ul class="contact-list">
+          <li>
+            <span class="k">WhatsApp</span>
+            <a class="js-wa" data-wa-text="Hola! Quiero consultar por indumentaria personalizada." href="#">+54 9 351 000-0000</a>
+          </li>
+          <li>
+            <span class="k">Email</span>
+            <a href="mailto:hola@vestitunegocio.com.ar">hola@vestitunegocio.com.ar</a>
+          </li>
+          <li>
+            <span class="k">Instagram</span>
+            <a href="https://instagram.com/vestitunegocio" rel="noopener">@vestitunegocio</a>
+          </li>
+          <li>
+            <span class="k">Zona</span>
+            <span>Córdoba Capital · Entregas con turno · Envíos a todo el país</span>
+          </li>
+          <li>
+            <span class="k">Atención</span>
+            <span>Lunes a viernes de 9 a 18 h · Sábados de 9 a 13 h</span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="form-card" id="quote-form" novalidate>
+        <div class="row-2">
+          <div class="field">
+            <label for="q-nombre">Nombre</label>
+            <input type="text" id="q-nombre" name="nombre" autocomplete="name" placeholder="Cómo te llamás">
+          </div>
+          <div class="field">
+            <label for="q-negocio">Negocio</label>
+            <input type="text" id="q-negocio" name="negocio" autocomplete="organization" placeholder="Nombre de tu local">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="q-rubro">Rubro</label>
+          <select id="q-rubro" name="rubro">
+            <option>Gastronomía</option>
+            <option>Gimnasio o estudio</option>
+            <option>Peluquería o barbería</option>
+            <option>Taller o ferretería</option>
+            <option>Comercio o kiosco</option>
+            <option>Salud y estética</option>
+            <option>Servicios profesionales</option>
+            <option>Escuela, club o evento</option>
+            <option>Otro</option>
+          </select>
+        </div>
+
+        <fieldset>
+          <legend class="legend">Qué necesitás</legend>
+          <div class="opts">
+            <label class="opt"><input type="checkbox" name="prenda" value="Remeras" checked><span>Remeras</span></label>
+            <label class="opt"><input type="checkbox" name="prenda" value="Buzos"><span>Buzos</span></label>
+            <label class="opt"><input type="checkbox" name="prenda" value="Gorras"><span>Gorras</span></label>
+            <label class="opt"><input type="checkbox" name="prenda" value="Otras prendas"><span>Otras prendas</span></label>
+          </div>
+        </fieldset>
+
+        <div class="row-2">
+          <div class="field">
+            <label for="q-cantidad">Cantidad aproximada</label>
+            <input type="number" id="q-cantidad" name="cantidad" min="1" step="1" value="10" inputmode="numeric">
+          </div>
+          <div class="field">
+            <label for="q-plazo">Para cuándo</label>
+            <select id="q-plazo" name="plazo">
+              <option>Sin apuro</option>
+              <option selected>Dentro del mes</option>
+              <option>Es urgente</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="q-detalle">Detalle</label>
+          <textarea id="q-detalle" name="detalle" placeholder="Colores de la marca, dónde va la estampa, si ya tenés el logo en vector..."></textarea>
+        </div>
+
+        <p class="wa-preview" id="wa-preview" aria-live="polite"></p>
+
+        <a class="btn btn-primary" id="wa-send" href="#" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+        <p class="form-note">Se abre WhatsApp con el mensaje ya escrito. Podés revisarlo y editarlo antes de mandarlo.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       FAQ
+       ========================================================== -->
+  <section class="band band-alt" id="faq">
+    <div class="wrap">
+      <div class="sect-head">
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2 class="d2">Lo que siempre nos preguntan</h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>¿Cuál es la cantidad mínima de compra?</summary>
+          <div class="answer"><p>Una sola prenda. El DTF no necesita marcos ni matrices, así que podés pedir dos remeras para probar la calidad y después ampliar el pedido. A partir de 10 unidades el precio por prenda baja de forma escalonada.</p></div>
+        </details>
+        <details>
+          <summary>¿Cuánto tarda el pedido?</summary>
+          <div class="answer"><p>Entre 5 y 7 días hábiles desde que aprobás el diseño y dejás la seña. Si tenés una fecha ajustada (una feria, una inauguración), avisanos al consultar: solemos poder resolver urgencias en 48 a 72 horas con un recargo.</p></div>
+        </details>
+        <details>
+          <summary>¿En qué formato tengo que mandar el logo?</summary>
+          <div class="answer"><p>Lo ideal es un vector (AI, SVG, PDF, EPS) o un PNG con fondo transparente de al menos 300 dpi. Si solo tenés el logo sacado de una foto o de tu Instagram, lo redibujamos sin cargo antes de imprimir y te lo entregamos en vector para que lo uses en cartelería, redes y facturas.</p></div>
+        </details>
+        <details>
+          <summary>¿Puedo llevar mis propias prendas para estampar?</summary>
+          <div class="answer"><p>Sí. Estampamos prendas provistas por el cliente siempre que sean de algodón, poliéster o mezcla y estén sin uso. Revisamos la tela antes y te confirmamos si soporta la temperatura de la plancha.</p></div>
+        </details>
+        <details>
+          <summary>¿Cómo se lava la ropa estampada en DTF?</summary>
+          <div class="answer"><p>Del revés, con agua fría o tibia y sin lavandina. No planchar directo sobre la estampa: si necesitás plancharla, hacelo del revés o con un paño en el medio. Con ese cuidado la estampa supera los 50 lavados sin cuartearse.</p></div>
+        </details>
+        <details>
+          <summary>¿Hacen envíos fuera de Córdoba?</summary>
+          <div class="answer"><p>Sí, despachamos a todo el país por correo o transporte. En Córdoba Capital coordinamos la entrega con turno previo. El costo del envío se detalla en el presupuesto antes de que confirmes.</p></div>
+        </details>
+        <details>
+          <summary>¿Qué es exactamente el DTF?</summary>
+          <div class="answer"><p><em>Direct to Film</em>: el diseño se imprime sobre una película de PET con tintas de color más una capa de blanco que funciona de base. Después se le aplica un polvo adhesivo, se cura y se transfiere a la prenda con plancha térmica a unos 160&nbsp;°C durante 15 segundos. Esa base de blanco es lo que permite que un logo a todo color se vea nítido incluso sobre tela negra.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CIERRE
+       ========================================================== -->
+  <section class="band">
+    <div class="wrap" style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:1.2rem">
+      <h2 class="d2" style="max-width:20ch">Vestí tu negocio esta temporada</h2>
+      <p class="lead" style="margin:0 auto">Mandanos el logo y te devolvemos una propuesta con precio y vista previa. Sin compromiso.</p>
+      <a class="btn btn-primary js-wa" data-wa-text="Hola! Te mando el logo de mi negocio para pedir un presupuesto." href="#presupuesto">Escribinos por WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <a class="brand" href="#inicio">
+          <svg class="brand-mark" width="34" height="34" style="color:var(--magenta)" aria-hidden="true"><use href="#mark"></use></svg>
+          <span class="brand-name">Vestí<em>Tu Negocio</em></span>
+        </a>
+        <p>Indumentaria personalizada con estampado DTF para comercios, emprendimientos y equipos de trabajo en Córdoba Capital, Argentina.</p>
+      </div>
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#dtf">Por qué DTF</a></li>
+          <li><a href="#proceso">Cómo trabajamos</a></li>
+          <li><a href="#rubros">Rubros</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a class="js-wa" data-wa-text="Hola! Quiero consultar por indumentaria personalizada." href="#">WhatsApp +54 9 351 000-0000</a></li>
+          <li><a href="mailto:hola@vestitunegocio.com.ar">hola@vestitunegocio.com.ar</a></li>
+          <li><a href="https://instagram.com/vestitunegocio" rel="noopener">Instagram @vestitunegocio</a></li>
+          <li>Córdoba Capital, Argentina</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; <span id="year">2026</span> Vestí Tu Negocio</span>
+      <span>Remeras, buzos y gorras personalizadas · Córdoba, Argentina</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float js-wa" data-wa-text="Hola! Quiero pedir un presupuesto para vestir mi negocio." href="#presupuesto" aria-label="Escribinos por WhatsApp">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-4-.1-.2-1-1.4-1-2.6 0-1.2.6-1.8.9-2.1.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.5l-.3.4c-.1.1-.3.3-.1.6.1.3.6 1.1 1.4 1.8 1 .9 1.7 1.1 2 1.2.3.1.4.1.6-.1l.8-1c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3.1.2.1.7-.1 1.3Z"></path></svg>
+  WhatsApp
+</a>
+
+<script>
+(function () {
+  /* ==========================================================
+     EDITAR ACÁ: datos de contacto
+     Número de WhatsApp en formato internacional, solo dígitos.
+     Ejemplo Córdoba: 54 9 351 1234567  ->  "5493511234567"
+     ========================================================== */
+  var WHATSAPP = "5493510000000";
+
+  var waLink = function (text) {
+    return "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(text);
+  };
+
+  /* Enlaces sueltos con mensaje fijo */
+  Array.prototype.forEach.call(document.querySelectorAll(".js-wa"), function (el) {
+    el.href = waLink(el.getAttribute("data-wa-text") || "Hola!");
+    el.target = "_blank";
+    el.rel = "noopener";
+  });
+
+  /* Cotizador: arma el mensaje a partir del formulario */
+  var form = document.getElementById("quote-form");
+  if (!form) return;
+  var preview = document.getElementById("wa-preview");
+  var send = document.getElementById("wa-send");
+
+  function buildMessage() {
+    var val = function (id) { return (document.getElementById(id).value || "").trim(); };
+    var prendas = Array.prototype.map.call(
+      form.querySelectorAll('input[name="prenda"]:checked'),
+      function (i) { return i.value; }
+    );
+
+    var nombre = val("q-nombre");
+    var negocio = val("q-negocio");
+    var cantidad = val("q-cantidad");
+    var detalle = val("q-detalle");
+
+    var lines = ["Hola Vestí Tu Negocio! Quiero un presupuesto."];
+    if (nombre) lines.push("Nombre: " + nombre);
+    if (negocio) lines.push("Negocio: " + negocio);
+    lines.push("Rubro: " + val("q-rubro"));
+    lines.push("Prendas: " + (prendas.length ? prendas.join(", ") : "a definir"));
+    lines.push("Cantidad aproximada: " + (cantidad ? cantidad + " unidades" : "a definir"));
+    lines.push("Plazo: " + val("q-plazo"));
+    if (detalle) lines.push("Detalle: " + detalle);
+
+    return lines.join("\n");
+  }
+
+  function refresh() {
+    var msg = buildMessage();
+    preview.textContent = msg;
+    send.href = waLink(msg);
+  }
+
+  form.addEventListener("input", refresh);
+  form.addEventListener("change", refresh);
+  refresh();
+
+  var year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+})();
+</script>
