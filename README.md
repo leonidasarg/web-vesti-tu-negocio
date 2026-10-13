@@ -54,6 +54,18 @@ canonical, Open Graph, Twitter Card, `lang="es-AR"`, geo tags de Córdoba y dato
 estructurados schema.org con `LocalBusiness` + `ClothingStore`, catálogo de productos,
 horarios, zona de cobertura y `FAQPage`.
 
+## Copia en Google Drive
+
+Los archivos también viven en `G:\Mi unidad\Vesti Tu Negocio`, para tenerlos a mano
+y poder compartirlos. Esa copia **no** incluye la carpeta `.git`: Google Drive
+sincroniza archivo por archivo y corrompe el historial de git si lo toca.
+
+El repo manda; Drive es la copia para compartir. Después de cambiar algo:
+
+```bash
+npm run drive
+```
+
 ## Publicar
 
 Cualquier hosting estático sirve. Con GitHub Pages: Settings → Pages → Source: `main` / `root`.

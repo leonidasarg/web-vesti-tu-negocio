@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="256" height="256" role="img" aria-label="Vestí Tu Negocio">
+  <title>Vestí Tu Negocio</title>
+  <rect x="1.5" y="1.5" width="29" height="29" rx="7" fill="#D6006E"/>
+  <circle cx="8" cy="8" r="1.9" fill="#FFFFFF"/>
+  <path d="M8.6 10.8h4.9l2.5 5.4 2.5-5.4h4.9L16 24.6Z" fill="#FFFFFF"/>
+</svg>

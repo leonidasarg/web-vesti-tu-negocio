@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="256" height="256" role="img" aria-label="Vestí Tu Negocio">
+  <title>Vestí Tu Negocio — isotipo monocromo blanco, marca calada</title>
+  <!-- Un solo color: la marca es un agujero. Sirve para estampar sobre
+       cualquier fondo oscuro y para estampado a un color. -->
+  <path fill="#FFFFFF" fill-rule="evenodd" d="M8.5 1.5h15a7 7 0 0 1 7 7v15a7 7 0 0 1-7 7h-15a7 7 0 0 1-7-7v-15a7 7 0 0 1 7-7Z M8 6.1a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 1 0 0-3.8Z M8.6 10.8h4.9l2.5 5.4 2.5-5.4h4.9L16 24.6Z"/>
+</svg>

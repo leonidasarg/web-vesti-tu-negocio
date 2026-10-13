@@ -1,0 +1,762 @@
+<title>Manual de Marca Vestí Tu Negocio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#F2EFEE; --surface:#FFFFFF; --surface-2:#E9E4E5;
+  --ink:#15131A; --ink-2:#453F4C; --ink-3:#736C7C;
+  --line:#DAD2D5; --line-strong:#BDB2B7;
+  --magenta:#D6006E; --magenta-soft:#FCE4F0;
+  --cyan:#0089C7; --yellow:#F5C400;
+  --on-accent:#FFFFFF; --mal:#C32020;
+  --display:"Archivo","Arial Black",Helvetica,Arial,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",Helvetica,Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+  --wrap:1080px; --gut:clamp(20px,5vw,44px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#141118; --surface:#1C1822; --surface-2:#262030;
+    --ink:#F3EFF4; --ink-2:#C6BECE; --ink-3:#928A9E;
+    --line:#322B3B; --line-strong:#463D52;
+    --magenta:#FF4D9D; --magenta-soft:#3A0F27;
+    --cyan:#3FBBEE; --yellow:#FFD84D;
+    --on-accent:#1A0210; --mal:#FF6B6B;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#141118; --surface:#1C1822; --surface-2:#262030;
+  --ink:#F3EFF4; --ink-2:#C6BECE; --ink-3:#928A9E;
+  --line:#322B3B; --line-strong:#463D52;
+  --magenta:#FF4D9D; --magenta-soft:#3A0F27;
+  --cyan:#3FBBEE; --yellow:#FFD84D;
+  --on-accent:#1A0210; --mal:#FF6B6B;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:var(--gut)}
+p{margin:0 0 1em}p:last-child{margin-bottom:0}
+
+.d1,.d2{font-family:var(--display);font-variation-settings:"wdth" 112;font-weight:800;line-height:.95;letter-spacing:-.015em;text-transform:uppercase;text-wrap:balance;margin:0}
+.d1{font-size:clamp(2.3rem,6vw,4.4rem)}
+.d2{font-size:clamp(1.6rem,3.1vw,2.3rem)}
+h3{font-family:var(--body);font-size:1.05rem;font-weight:600;margin:0 0 .5rem}
+.lead{font-size:clamp(1.02rem,1.5vw,1.16rem);color:var(--ink-2);max-width:60ch;line-height:1.55}
+.nota{font-size:.9rem;color:var(--ink-3);max-width:64ch}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+/* numeración: este documento se cita por sección, el número es la referencia */
+.sec{padding:clamp(48px,7vw,86px) 0;border-top:1px solid var(--line)}
+.sec-n{font-family:var(--mono);font-size:.74rem;letter-spacing:.2em;color:var(--magenta);display:block;margin-bottom:.9rem}
+.sec-head{max-width:62ch;margin-bottom:clamp(28px,4vw,44px)}
+.sec-head .d2{margin-bottom:.7rem}
+
+/* portada */
+.cover{padding:clamp(44px,7vw,92px) 0 clamp(40px,6vw,72px)}
+.cover-mark{display:flex;align-items:center;gap:1rem;margin-bottom:2.2rem}
+.cover-name{font-family:var(--display);font-variation-settings:"wdth" 118;font-weight:800;text-transform:uppercase;font-size:1.1rem;line-height:1}
+.cover-name em{display:block;font-style:normal;color:var(--magenta);font-size:.85rem;letter-spacing:.07em;margin-top:4px}
+.reg{text-shadow:.030em .026em 0 var(--magenta), -.026em -.020em 0 var(--cyan)}
+.meta{display:flex;flex-wrap:wrap;gap:.5rem 2rem;margin-top:2.4rem;padding-top:1.3rem;border-top:1px solid var(--line);font-family:var(--mono);font-size:.76rem;color:var(--ink-3)}
+.meta b{color:var(--magenta);font-weight:500}
+
+/* indice */
+.toc{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:2.6rem}
+@media (min-width:620px){.toc{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:980px){.toc{grid-template-columns:repeat(3,1fr)}}
+.toc a{background:var(--paper);padding:.85rem 1.1rem;text-decoration:none;color:var(--ink-2);font-size:.92rem;display:flex;gap:.7rem}
+.toc a:hover{background:var(--magenta-soft);color:var(--ink)}
+.toc .n{font-family:var(--mono);font-size:.76rem;color:var(--magenta)}
+
+/* bloques genericos */
+.panel{background:var(--surface);border:1px solid var(--line);padding:clamp(20px,3vw,30px)}
+.grid-2{display:grid;gap:clamp(18px,2.6vw,26px)}
+@media (min-width:760px){.grid-2{grid-template-columns:1fr 1fr}}
+.grid-3{display:grid;gap:clamp(18px,2.6vw,26px)}
+@media (min-width:720px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+
+.esencia{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+@media (min-width:760px){.esencia{grid-template-columns:repeat(3,1fr)}}
+.esencia > div{background:var(--surface);padding:clamp(20px,3vw,28px)}
+.esencia .k{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--magenta);display:block;margin-bottom:.6rem}
+.esencia p{font-size:.96rem;color:var(--ink-2)}
+
+/* logo */
+.logo-caja{background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;padding:clamp(26px,4vw,42px);min-height:190px}
+/* este panel demuestra el logo sobre oscuro: no sigue el tema */
+.logo-caja.oscura{background:#15131A}
+.pie{font-family:var(--mono);font-size:.72rem;color:var(--ink-3);margin-top:.7rem;letter-spacing:.04em}
+.lock{display:flex;align-items:center;gap:.85rem}
+.lock-txt{font-family:var(--display);font-variation-settings:"wdth" 118;font-weight:800;text-transform:uppercase;font-size:1.25rem;line-height:1;letter-spacing:.01em}
+.lock-txt em{display:block;font-style:normal;color:var(--magenta);font-size:.95rem;letter-spacing:.075em;margin-top:4px}
+.lock-v{display:flex;flex-direction:column;align-items:center;gap:.9rem;text-align:center}
+.oscura .lock-txt{color:var(--surface)}
+
+/* construccion */
+.constr{display:grid;gap:clamp(20px,3vw,32px);align-items:center}
+@media (min-width:820px){.constr{grid-template-columns:320px 1fr}}
+.medidas{list-style:none;padding:0;margin:0;display:grid;gap:.9rem}
+.medidas li{display:grid;grid-template-columns:auto 1fr;gap:.2rem 1rem;align-items:baseline;padding-bottom:.9rem;border-bottom:1px solid var(--line)}
+.medidas li:last-child{border-bottom:0;padding-bottom:0}
+.medidas .k{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--magenta);grid-column:1/-1}
+.medidas .v{font-size:.95rem;color:var(--ink-2);grid-column:1/-1}
+
+/* usos incorrectos */
+.mal-grid{display:grid;gap:clamp(14px,2vw,20px)}
+@media (min-width:560px){.mal-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:900px){.mal-grid{grid-template-columns:repeat(3,1fr)}}
+.mal-card{border:1px solid var(--line);background:var(--surface)}
+.mal-art{display:grid;place-items:center;padding:26px 16px;background:var(--surface-2);position:relative;min-height:126px;overflow:hidden}
+.mal-art::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom right,transparent calc(50% - 1px),var(--mal) calc(50% - 1px),var(--mal) calc(50% + 1px),transparent calc(50% + 1px))}
+.mal-txt{padding:.85rem 1rem;font-size:.88rem;color:var(--ink-2)}
+.mal-txt b{display:block;color:var(--mal);font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.25rem}
+
+/* paleta */
+.swatches{display:grid;gap:clamp(16px,2.2vw,22px)}
+@media (min-width:600px){.swatches{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:980px){.swatches{grid-template-columns:repeat(3,1fr)}}
+.sw{border:1px solid var(--line);background:var(--surface);display:flex;flex-direction:column}
+.sw-chip{height:104px;display:flex;align-items:flex-end;padding:.75rem .9rem;font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
+.sw-datos{padding:.9rem 1rem 1.1rem;display:grid;gap:.3rem}
+.sw-datos .nombre{font-weight:600;font-size:.98rem}
+.sw-datos dl{display:grid;grid-template-columns:auto 1fr;gap:.18rem .7rem;margin:.35rem 0 0;font-family:var(--mono);font-size:.74rem;font-variant-numeric:tabular-nums}
+.sw-datos dt{color:var(--ink-3);letter-spacing:.06em}
+.sw-datos dd{margin:0;color:var(--ink-2)}
+.sw-uso{font-size:.86rem;color:var(--ink-3);margin-top:.5rem;line-height:1.45}
+
+.proporcion{display:flex;height:54px;border:1px solid var(--line);overflow:hidden;margin-top:.8rem}
+.proporcion div{display:grid;place-items:center;font-family:var(--mono);font-size:.68rem;letter-spacing:.08em}
+
+/* tipografia */
+.tipo{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+.tipo > div{background:var(--surface);padding:clamp(20px,3vw,28px)}
+.tipo .rol{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--magenta);margin-bottom:.9rem}
+.esp-display{font-family:var(--display);font-variation-settings:"wdth" 112;font-weight:800;font-size:clamp(2rem,5vw,3.4rem);line-height:.95;text-transform:uppercase;letter-spacing:-.015em;margin:0 0 .6rem}
+.esp-body{font-size:1.12rem;line-height:1.55;margin:0 0 .6rem;max-width:58ch}
+.esp-mono{font-family:var(--mono);font-size:1rem;margin:0 0 .6rem}
+.escala{width:100%;border-collapse:collapse;margin-top:1.2rem;font-size:.88rem}
+.escala th,.escala td{text-align:left;padding:.6rem .8rem;border-bottom:1px solid var(--line);vertical-align:top}
+.escala thead th{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+.escala td.mono{font-family:var(--mono);font-size:.8rem;color:var(--ink-2);white-space:nowrap}
+.tabla-scroll{overflow-x:auto}
+
+/* tono de voz */
+.voz{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+@media (min-width:720px){.voz{grid-template-columns:1fr 1fr}}
+.voz > div{background:var(--surface);padding:clamp(18px,2.6vw,26px)}
+.voz .cab{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
+.voz .si .cab{color:var(--cyan)}
+.voz .no .cab{color:var(--mal)}
+.voz ul{list-style:none;padding:0;margin:0;display:grid;gap:.85rem}
+.voz li{font-size:.95rem;color:var(--ink-2);padding-left:1.1rem;position:relative;line-height:1.5}
+.voz li::before{position:absolute;left:0;top:0;font-family:var(--mono)}
+.voz .si li::before{content:"+";color:var(--cyan)}
+.voz .no li::before{content:"\2013";color:var(--mal)}
+.voz li q{color:var(--ink);font-style:normal;quotes:"\201C" "\201D"}
+
+/* aplicaciones */
+.apps{display:grid;gap:clamp(16px,2.4vw,24px)}
+@media (min-width:680px){.apps{grid-template-columns:repeat(2,1fr)}}
+.app{border:1px solid var(--line);background:var(--surface);overflow:hidden}
+.app-art{background:var(--surface-2);padding:22px;display:grid;place-items:center;min-height:168px}
+.app-txt{padding:1rem 1.15rem 1.2rem;font-size:.92rem;color:var(--ink-2)}
+.app-txt b{display:block;color:var(--ink);font-weight:600;margin-bottom:.25rem;font-size:.98rem}
+
+/* etiqueta de prenda simulada */
+.etiq{background:var(--surface);border:1px solid var(--line-strong);width:168px;padding:14px 12px;font-family:var(--mono);font-size:.56rem;line-height:1.7;color:var(--ink-2);text-align:center}
+.etiq .marca{font-family:var(--display);font-variation-settings:"wdth" 118;font-weight:800;font-size:.8rem;text-transform:uppercase;color:var(--ink);letter-spacing:.02em;margin-bottom:.3rem}
+.etiq .cuidados{display:flex;justify-content:center;gap:9px;margin:9px 0;color:var(--ink-3)}
+.etiq hr{border:0;border-top:1px solid var(--line);margin:9px 0}
+
+/* tarjeta simulada */
+.tarjeta{width:230px;aspect-ratio:85/55;background:#15131A;color:#F2EFEE;padding:16px;display:flex;flex-direction:column;justify-content:space-between}
+.tarjeta .nom{font-family:var(--display);font-variation-settings:"wdth" 118;font-weight:800;text-transform:uppercase;font-size:.82rem;line-height:1.05}
+.tarjeta .nom em{display:block;font-style:normal;color:var(--magenta);font-size:.66rem;letter-spacing:.07em;margin-top:2px}
+.tarjeta .dat{font-family:var(--mono);font-size:.56rem;line-height:1.75;color:#BDB2B7}
+
+/* firma de email */
+.firma{background:var(--surface);border:1px solid var(--line);padding:14px 16px;display:flex;gap:12px;align-items:center;max-width:330px}
+.firma .l{font-family:var(--display);font-variation-settings:"wdth" 118;font-weight:800;text-transform:uppercase;font-size:.78rem;line-height:1.1}
+.firma .l em{display:block;font-style:normal;color:var(--magenta);font-size:.62rem;letter-spacing:.07em;margin-top:2px}
+.firma .d{font-family:var(--mono);font-size:.6rem;line-height:1.7;color:var(--ink-3);border-left:2px solid var(--magenta);padding-left:10px}
+
+/* entregables */
+.archivos{width:100%;border-collapse:collapse;font-size:.9rem;min-width:600px}
+.archivos th,.archivos td{text-align:left;padding:.7rem .85rem;border-bottom:1px solid var(--line);vertical-align:top}
+.archivos thead th{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:500;background:var(--surface-2)}
+.archivos td.f{font-family:var(--mono);font-size:.78rem;color:var(--magenta);white-space:nowrap}
+.archivos td:last-child{color:var(--ink-2)}
+
+footer{border-top:1px solid var(--line);padding:2.4rem 0 3rem;font-family:var(--mono);font-size:.74rem;color:var(--ink-3)}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="iso" viewBox="0 0 32 32">
+      <rect x="1.5" y="1.5" width="29" height="29" rx="7" fill="var(--magenta)"></rect>
+      <circle cx="8" cy="8" r="1.9" fill="#FFFFFF"></circle>
+      <path d="M8.6 10.8h4.9l2.5 5.4 2.5-5.4h4.9L16 24.6Z" fill="#FFFFFF"></path>
+    </symbol>
+    <!-- monocromo: la marca es un hueco del color que haya detrás,
+         declarado con --iso-hueco en cada uso -->
+    <symbol id="iso-plano" viewBox="0 0 32 32">
+      <rect x="1.5" y="1.5" width="29" height="29" rx="7" fill="currentColor"></rect>
+      <circle cx="8" cy="8" r="1.9" fill="var(--iso-hueco, var(--surface))"></circle>
+      <path d="M8.6 10.8h4.9l2.5 5.4 2.5-5.4h4.9L16 24.6Z" fill="var(--iso-hueco, var(--surface))"></path>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="cover wrap">
+  <div class="cover-mark">
+    <svg width="46" height="46" aria-hidden="true"><use href="#iso"></use></svg>
+    <span class="cover-name">Vestí<em>Tu Negocio</em></span>
+  </div>
+  <h1 class="d1">Manual de <span class="reg">marca</span></h1>
+  <p class="lead" style="margin-top:1.3rem">Cómo se usa la identidad de Vestí Tu Negocio: el logo, los colores, la tipografía y la forma de hablarle a un comerciante de Córdoba. Pasale este documento a cualquiera que tenga que diseñar algo para la marca.</p>
+  <p class="meta">
+    <span><b>Versión</b> 1.0</span>
+    <span><b>Rubro</b> Indumentaria personalizada DTF</span>
+    <span><b>Plaza</b> Córdoba Capital, Argentina</span>
+  </p>
+
+  <nav class="toc" aria-label="Índice">
+    <a href="#esencia"><span class="n">01</span> La marca</a>
+    <a href="#logo"><span class="n">02</span> El logo</a>
+    <a href="#construccion"><span class="n">03</span> Construcción y aire</a>
+    <a href="#incorrecto"><span class="n">04</span> Usos incorrectos</a>
+    <a href="#color"><span class="n">05</span> Color</a>
+    <a href="#tipografia"><span class="n">06</span> Tipografía</a>
+    <a href="#recurso"><span class="n">07</span> El desregistro</a>
+    <a href="#voz"><span class="n">08</span> Tono de voz</a>
+    <a href="#aplicaciones"><span class="n">09</span> Aplicaciones</a>
+    <a href="#archivos"><span class="n">10</span> Archivos</a>
+  </nav>
+</header>
+
+<!-- ============================================ 01 -->
+<section class="sec" id="esencia">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-n">01 — La marca</span>
+      <h2 class="d2">Un negocio uniformado se ve más grande de lo que es</h2>
+      <p class="lead">Esa frase es la idea madre. Todo lo que se diseñe para Vestí Tu Negocio tiene que sostenerla: el cliente no compra remeras, compra parecer más profesional de lo que su tamaño sugiere.</p>
+    </div>
+    <div class="esencia">
+      <div>
+        <span class="k">Qué hacemos</span>
+        <p>Remeras, buzos y gorras personalizadas con estampado DTF de alta calidad, producidas en Córdoba Capital. Desde una sola prenda.</p>
+      </div>
+      <div>
+        <span class="k">A quién le hablamos</span>
+        <p>Al dueño de un comercio chico o mediano que atiende público: gastronomía, gimnasios, talleres, peluquerías, kioscos. No es un comprador de moda, es alguien resolviendo la imagen de su negocio.</p>
+      </div>
+      <div>
+        <span class="k">Qué prometemos</span>
+        <p>Que su equipo se vea uniformado rápido, sin pedidos mínimos imposibles y sin tener que entender de imprenta. Nosotros ponemos el oficio.</p>
+      </div>
+    </div>
+    <p class="nota" style="margin-top:1.6rem">El nombre es un imperativo en voseo rioplatense: <strong>vestí</strong>. Es una instrucción, no una descripción. Nunca se escribe sin tilde ni se conjuga de otra forma (&ldquo;viste tu negocio&rdquo; es incorrecto).</p>
+  </div>
+</section>
+
+<!-- ============================================ 02 -->
+<section class="sec" id="logo">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-n">02 — El logo</span>
+      <h2 class="d2">Una etiqueta de prenda con un escote en V</h2>
+      <p class="lead">El isotipo es una etiqueta colgante: la placa redondeada, el ojal por donde pasa el hilo y, adentro, un escote en V que es a la vez la inicial de <em>Vestí</em> y el cuello de una remera. Dos lecturas en una forma sola, lo que hace que funcione a 16 píxeles.</p>
+    </div>
+
+    <div class="grid-3">
+      <div>
+        <div class="logo-caja">
+          <div class="lock">
+            <svg width="54" height="54" aria-hidden="true"><use href="#iso"></use></svg>
+            <span class="lock-txt">Vestí<em>Tu Negocio</em></span>
+          </div>
+        </div>
+        <p class="pie">Horizontal — versión principal</p>
+      </div>
+      <div>
+        <div class="logo-caja">
+          <div class="lock-v">
+            <svg width="58" height="58" aria-hidden="true"><use href="#iso"></use></svg>
+            <span class="lock-txt" style="text-align:center">Vestí<em>Tu Negocio</em></span>
+          </div>
+        </div>
+        <p class="pie">Vertical — espacios angostos</p>
+      </div>
+      <div>
+        <div class="logo-caja">
+          <svg width="72" height="72" aria-hidden="true"><use href="#iso"></use></svg>
+        </div>
+        <p class="pie">Isotipo solo — avatar y favicon</p>
+      </div>
+    </div>
+
+    <div class="grid-2" style="margin-top:clamp(20px,3vw,28px)">
+      <div>
+        <div class="logo-caja oscura">
+          <div class="lock">
+            <svg width="54" height="54" style="color:#FFFFFF;--iso-hueco:#15131A" aria-hidden="true"><use href="#iso-plano"></use></svg>
+            <span class="lock-txt" style="color:#F2EFEE">Vestí<em style="color:#FF4D9D">Tu Negocio</em></span>
+          </div>
+        </div>
+        <p class="pie">Sobre fondo oscuro — el magenta sube a #FF4D9D</p>
+      </div>
+      <div>
+        <div class="logo-caja">
+          <div class="lock">
+            <svg width="54" height="54" style="color:var(--ink)" aria-hidden="true"><use href="#iso-plano"></use></svg>
+            <span class="lock-txt">Vestí<em style="color:var(--ink)">Tu Negocio</em></span>
+          </div>
+        </div>
+        <p class="pie">Monocromo — estampado a un color, sellos, facturas</p>
+      </div>
+    </div>
+
+    <div class="panel" style="margin-top:clamp(22px,3vw,30px)">
+      <h3>Cuál usar</h3>
+      <p class="nota">La <strong>horizontal</strong> es la versión por defecto: web, cartelería, firma de email, membrete. La <strong>vertical</strong> entra cuando el espacio es más alto que ancho: una bolsa, una etiqueta colgante, un banner de feria. El <strong>isotipo solo</strong> se usa únicamente cuando el nombre ya está en otro lado o no entra: avatar de Instagram, favicon, botón de la app, estampa chica en una manga.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ 03 -->
+<section class="sec" id="construccion">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-n">03 — Construcción y aire</span>
+      <h2 class="d2">La unidad de medida es X</h2>
+      <p class="lead">X es el radio de la esquina de la placa. Todo el sistema se mide con esa unidad, así el logo se escala sin que nadie tenga que improvisar márgenes.</p>
+    </div>
+
+    <div class="constr">
+      <div>
+        <div class="logo-caja" style="padding:26px">
+          <svg viewBox="0 0 64 64" width="240" height="240" role="img" aria-label="Diagrama del área de respeto del isotipo">
+            <rect x="1" y="1" width="62" height="62" fill="none" stroke="var(--cyan)" stroke-width="1" stroke-dasharray="4 3"></rect>
+            <g transform="translate(16 16)">
+              <use href="#iso" width="32" height="32"></use>
+            </g>
+            <g stroke="var(--cyan)" stroke-width="1" fill="none">
+              <path d="M1 8h15M48 8h15M8 1v15M8 48v15"></path>
+            </g>
+            <g fill="var(--cyan)" font-family="IBM Plex Mono, monospace" font-size="6">
+              <text x="6.5" y="30">X</text>
+              <text x="53" y="30">X</text>
+              <text x="30" y="7">X</text>
+              <text x="30" y="60">X</text>
+            </g>
+          </svg>
+        </div>
+        <p class="pie">Área de respeto: 1X libre en los cuatro lados</p>
+      </div>
+
+      <ul class="medidas">
+        <li>
+          <span class="k">Unidad X</span>
+          <span class="v">El radio de la esquina de la placa, equivalente a <span class="mono">7/32</span> del lado del isotipo. En un isotipo de 64&nbsp;px, X&nbsp;=&nbsp;14&nbsp;px.</span>
+        </li>
+        <li>
+          <span class="k">Área de respeto</span>
+          <span class="v">Mínimo 1X libre alrededor del logo. Nada entra ahí: ni texto, ni fotos, ni el borde de la pieza. Si dudás, dale más.</span>
+        </li>
+        <li>
+          <span class="k">Tamaño mínimo digital</span>
+          <span class="v">Isotipo solo: <span class="mono">16&nbsp;px</span>. Lockup horizontal: <span class="mono">120&nbsp;px</span> de ancho. Más chico que eso el ojal se cierra y la V pierde el pico.</span>
+        </li>
+        <li>
+          <span class="k">Tamaño mínimo impreso</span>
+          <span class="v">Isotipo solo: <span class="mono">8&nbsp;mm</span>. Lockup horizontal: <span class="mono">30&nbsp;mm</span> de ancho.</span>
+        </li>
+        <li>
+          <span class="k">Separación en el lockup</span>
+          <span class="v">Entre isotipo y texto va 0,6X. El texto se alinea al centro óptico del isotipo, no a su borde superior.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ 04 -->
+<section class="sec" id="incorrecto">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-n">04 — Usos incorrectos</span>
+      <h2 class="d2">Lo que rompe la marca</h2>
+      <p class="lead">Todo lo de abajo ya pasó en marcas parecidas. Si alguien te manda un archivo con cualquiera de estos tratamientos, pedí que lo rehaga.</p>
+    </div>
+    <div class="mal-grid">
+      <div class="mal-card">
+        <div class="mal-art"><svg width="54" height="54" style="transform:scaleX(1.8)" aria-hidden="true"><use href="#iso"></use></svg></div>
+        <p class="mal-txt"><b>No deformar</b>Siempre proporcional. Nada de estirar para llenar un espacio.</p>
+      </div>
+      <div class="mal-card">
+        <div class="mal-art"><svg width="58" height="58" style="transform:rotate(-14deg)" aria-hidden="true"><use href="#iso"></use></svg></div>
+        <p class="mal-txt"><b>No rotar</b>El logo va siempre a 0°. La etiqueta cuelga derecha.</p>
+      </div>
+      <div class="mal-card">
+        <div class="mal-art" style="background:linear-gradient(120deg,#7B2FF7,#F107A3,#FFB800)"><svg width="58" height="58" aria-hidden="true"><use href="#iso"></use></svg></div>
+        <p class="mal-txt"><b>No sobre fondos ruidosos</b>Sobre fotos o degradés va la versión monocroma, nunca la de color.</p>
+      </div>
+      <div class="mal-card">
+        <div class="mal-art">
+          <svg width="58" height="58" aria-hidden="true" style="color:#2E7D32"><use href="#iso-plano"></use></svg>
+        </div>
+        <p class="mal-txt"><b>No recolorear</b>Magenta, tinta o blanco. No existe la versión verde, azul ni dorada.</p>
+      </div>
+      <div class="mal-card">
+        <div class="mal-art"><svg width="58" height="58" style="filter:drop-shadow(4px 5px 0 rgba(0,0,0,.45))" aria-hidden="true"><use href="#iso"></use></svg></div>
+        <p class="mal-txt"><b>No agregar efectos</b>Sin sombras, biselados, brillos ni contornos. La placa ya tiene cuerpo.</p>
+      </div>
+      <div class="mal-card">
+        <div class="mal-art">
+          <div class="lock" style="gap:2px"><svg width="40" height="40" aria-hidden="true"><use href="#iso"></use></svg><span class="lock-txt" style="font-size:.78rem">Vestí<em style="font-size:.6rem">Tu Negocio</em></span></div>
+        </div>
+        <p class="mal-txt"><b>No pegotear</b>Respetá el área de respeto y la separación de 0,6X entre marca y texto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ 05 -->
+<section class="sec" id="color">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-n">05 — Color</span>
+      <h2 class="d2">Paleta de imprenta</h2>
+      <p class="lead">Los colores no son decorativos: son los de una máquina de imprimir. Magenta y cyan de proceso sobre papel algodón. Es la paleta del oficio, y por eso la marca se ve de rubro y no genérica.</p>
+    </div>
+
+    <div class="swatches">
+      <div class="sw">
+        <div class="sw-chip" style="background:#D6006E;color:#fff">Principal</div>
+        <div class="sw-datos">
+          <span class="nombre">Magenta de proceso</span>
+          <dl>
+            <dt>HEX</dt><dd>#D6006E</dd>
+            <dt>RGB</dt><dd>214 · 0 · 110</dd>
+            <dt>CMYK</dt><dd>0 · 100 · 25 · 5</dd>
+            <dt>Pantone</dt><dd>7424 C aprox.</dd>
+          </dl>
+          <p class="sw-uso">El acento. Botones, la palabra clave de un título, el isotipo. Nunca para texto largo.</p>
+        </div>
+      </div>
+
+      <div class="sw">
+        <div class="sw-chip" style="background:#0089C7;color:#fff">Secundario</div>
+        <div class="sw-datos">
+          <span class="nombre">Cyan de proceso</span>
+          <dl>
+            <dt>HEX</dt><dd>#0089C7</dd>
+            <dt>RGB</dt><dd>0 · 137 · 199</dd>
+            <dt>CMYK</dt><dd>100 · 25 · 0 · 5</dd>
+            <dt>Pantone</dt><dd>2925 C aprox.</dd>
+          </dl>
+          <p class="sw-uso">Acompaña al magenta en el desregistro y marca lo correcto en listas y diagramas. Dosis chica.</p>
+        </div>
+      </div>
+
+      <div class="sw">
+        <div class="sw-chip" style="background:#F5C400;color:#15131A">Terciario</div>
+        <div class="sw-datos">
+          <span class="nombre">Amarillo de proceso</span>
+          <dl>
+            <dt>HEX</dt><dd>#F5C400</dd>
+            <dt>RGB</dt><dd>245 · 196 · 0</dd>
+            <dt>CMYK</dt><dd>0 · 20 · 100 · 0</dd>
+            <dt>Pantone</dt><dd>7408 C aprox.</dd>
+          </dl>
+          <p class="sw-uso">Completa el CMYK. Solo para destacar algo puntual: una oferta, un sticker. Casi nunca.</p>
+        </div>
+      </div>
+
+      <div class="sw">
+        <div class="sw-chip" style="background:#15131A;color:#F2EFEE">Texto</div>
+        <div class="sw-datos">
+          <span class="nombre">Tinta</span>
+          <dl>
+            <dt>HEX</dt><dd>#15131A</dd>
+            <dt>RGB</dt><dd>21 · 19 · 26</dd>
+            <dt>CMYK</dt><dd>75 · 68 · 60 · 85</dd>
+            <dt>Pantone</dt><dd>Neutral Black C aprox.</dd>
+          </dl>
+          <p class="sw-uso">Todo el texto y el fondo del modo oscuro. Es un negro con una gota de violeta, no un negro puro.</p>
+        </div>
+      </div>
+
+      <div class="sw">
+        <div class="sw-chip" style="background:#F2EFEE;color:#15131A;border-bottom:1px solid var(--line)">Fondo</div>
+        <div class="sw-datos">
+          <span class="nombre">Papel algodón</span>
+          <dl>
+            <dt>HEX</dt><dd>#F2EFEE</dd>
+            <dt>RGB</dt><dd>242 · 239 · 238</dd>
+            <dt>CMYK</dt><dd>3 · 4 · 4 · 0</dd>
+            <dt>Pantone</dt><dd>Warm Gray 1 C aprox.</dd>
+          </dl>
+          <p class="sw-uso">El fondo de todo. No es blanco puro: tiene un sesgo hacia el magenta que lo emparenta con la tela cruda.</p>
+        </div>
+      </div>
+
+      <div class="sw">
+        <div class="sw-chip" style="background:#141118;color:#F3EFF4">Modo oscuro</div>
+        <div class="sw-datos">
+          <span class="nombre">Tinta profunda</span>
+          <dl>
+            <dt>Fondo</dt><dd>#141118</dd>
+            <dt>Superficie</dt><dd>#1C1822</dd>
+            <dt>Texto</dt><dd>#F3EFF4</dd>
+            <dt>Magenta</dt><dd>#FF4D9D</dd>
+          </dl>
+          <p class="sw-uso">En fondo oscuro el magenta se aclara a #FF4D9D para no perder contraste. No uses #D6006E sobre negro.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:clamp(28px,4vw,40px)">Proporción de uso</h3>
+    <p class="nota">Una pieza bien balanceada es casi todo papel y tinta. El magenta rinde porque es escaso.</p>
+    <div class="proporcion">
+      <div style="background:#F2EFEE;color:#15131A;flex:60">60 % papel</div>
+      <div style="background:#15131A;color:#F2EFEE;flex:27">27 % tinta</div>
+      <div style="background:#D6006E;color:#fff;flex:10">10 %</div>
+      <div style="background:#0089C7;color:#fff;flex:3"></div>
+    </div>
+
+    <p class="nota" style="margin-top:1.4rem"><strong>Para estampar:</strong> el DTF imprime desde archivo digital, así que el valor que manda es el HEX. Los Pantone de arriba son aproximados y sirven para cartelería, papelería y vinilo &mdash; pedí siempre una prueba impresa antes de una tirada grande, porque el magenta de proceso vira con facilidad.</p>
+  </div>
+</section>
+
+<!-- ============================================ 06 -->
+<section class="sec" id="tipografia">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-n">06 — Tipografía</span>
+      <h2 class="d2">Tres tipografías, tres trabajos</h2>
+      <p class="lead">Las tres son gratuitas y están en Google Fonts. No hace falta comprar licencias ni pedirle permiso a nadie.</p>
+    </div>
+
+    <div class="tipo">
+      <div>
+        <p class="rol">Display — Archivo, peso 800, ancho 112</p>
+        <p class="esp-display">Vestí tu negocio</p>
+        <p class="nota">Una grotesca de ancho variable. Se usa <strong>expandida</strong> (eje <span class="mono">wdth</span> entre 105 y 125): así ocupa el ancho como una estampa sobre el pecho. Siempre en mayúsculas, interletrado apretado (<span class="mono">-0.015em</span>), interlineado 0.95. Solo para títulos — en texto corrido no se lee.</p>
+      </div>
+      <div>
+        <p class="rol">Texto — IBM Plex Sans, pesos 400 / 500 / 600</p>
+        <p class="esp-body">Tu logo, tus colores y el nombre de tu equipo, estampados en DTF de alta calidad. Que tu local se vea igual de profesional desde el mostrador hasta la calle.</p>
+        <p class="nota">Humanista con carácter de oficio, sin la neutralidad de las tipografías de sistema. Interlineado 1.6 y líneas de 60 a 65 caracteres.</p>
+      </div>
+      <div>
+        <p class="rol">Datos — IBM Plex Mono, pesos 400 / 500</p>
+        <p class="esp-mono">180 g/m² · Talles S al XXXL · 160 °C · 15 s</p>
+        <p class="nota">Para fichas técnicas, precios, plazos, etiquetas y rótulos de sección. Es la voz del taller: temperaturas, gramajes, tiempos. En mayúsculas con <span class="mono">letter-spacing</span> de 0.14em cuando funciona como rótulo.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:clamp(28px,4vw,38px)">Escala</h3>
+    <div class="tabla-scroll">
+      <table class="escala">
+        <thead>
+          <tr><th>Rol</th><th>Tipografía</th><th>Tamaño</th><th>Uso</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Título 1</td><td class="mono">Archivo 800 / wdth 112</td><td class="mono">38–77 px</td><td>Encabezado de página, una sola vez por pieza</td></tr>
+          <tr><td>Título 2</td><td class="mono">Archivo 800 / wdth 112</td><td class="mono">30–46 px</td><td>Apertura de sección</td></tr>
+          <tr><td>Título 3</td><td class="mono">IBM Plex Sans 600</td><td class="mono">17–18 px</td><td>Título de tarjeta o bloque</td></tr>
+          <tr><td>Destacado</td><td class="mono">IBM Plex Sans 400</td><td class="mono">17–19 px</td><td>Bajada debajo de un título</td></tr>
+          <tr><td>Texto</td><td class="mono">IBM Plex Sans 400</td><td class="mono">16–17 px</td><td>Cuerpo general</td></tr>
+          <tr><td>Rótulo</td><td class="mono">IBM Plex Mono 500</td><td class="mono">11–12 px</td><td>Mayúsculas, interletrado 0.14em</td></tr>
+          <tr><td>Ficha</td><td class="mono">IBM Plex Mono 400</td><td class="mono">12–13 px</td><td>Datos técnicos y precios</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ 07 -->
+<section class="sec" id="recurso">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-n">07 — El desregistro</span>
+      <h2 class="d2">El recurso gráfico propio</h2>
+      <p class="lead">Cuando una máquina imprime mal registrada, los canales se corren y aparece un borde magenta de un lado y cyan del otro. Eso, que en el taller es un error, acá es la firma de la marca.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="panel" style="display:grid;place-items:center;min-height:170px">
+        <p class="d2 reg" style="margin:0;text-align:center">Personalizadas</p>
+      </div>
+      <div>
+        <h3>Cómo se aplica</h3>
+        <p class="nota">Una copia magenta desplazada <span class="mono">+0.030em / +0.026em</span> y una copia cyan desplazada <span class="mono">-0.026em / -0.020em</span>, debajo del texto en tinta. En CSS es un <span class="mono">text-shadow</span> doble; en Illustrator, dos copias del texto atrás con esos corrimientos.</p>
+        <p class="nota" style="margin-top:.9rem"><strong>Una sola vez por pieza</strong>, sobre una palabra, no sobre un párrafo. Si aparece dos veces deja de ser un gesto y pasa a ser ruido. Tamaño mínimo 30 px: más chico se empasta.</p>
+        <h3 style="margin-top:1.4rem">Marcas de registro</h3>
+        <p class="nota">Las cruces finas en las esquinas de una pieza son el recurso secundario, el mismo que lleva una plancha de impresión. Trazo de 1,5 px en gris medio, nunca en magenta. Sirven para enmarcar una foto de producto o una placa de Instagram.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ 08 -->
+<section class="sec" id="voz">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-n">08 — Tono de voz</span>
+      <h2 class="d2">Como habla alguien que sabe hacer el trabajo</h2>
+      <p class="lead">Voseo rioplatense, segunda persona, frases cortas. La marca no es simpática ni graciosa: es clara. Un comerciante ocupado agradece que le digan el precio y el plazo sin vueltas.</p>
+    </div>
+
+    <div class="voz">
+      <div class="si">
+        <p class="cab">Sí</p>
+        <ul>
+          <li><q>Desde una prenda.</q> Datos concretos antes que adjetivos.</li>
+          <li><q>Entre 5 y 7 días hábiles desde que aprobás el diseño.</q> Plazos con condición, no promesas vagas.</li>
+          <li><q>Si tenés 200 remeras de un color, ahí conviene serigrafía.</q> Decir cuándo no somos la mejor opción construye confianza.</li>
+          <li><q>Mandanos el logo y te devolvemos una propuesta.</q> Verbos en imperativo: la marca pide una acción simple.</li>
+        </ul>
+      </div>
+      <div class="no">
+        <p class="cab">No</p>
+        <ul>
+          <li><q>La mejor calidad del mercado.</q> Superlativos que nadie puede verificar.</li>
+          <li><q>Somos líderes en soluciones textiles integrales.</q> Lenguaje corporativo vacío.</li>
+          <li><q>¡Consultanos ya!!! 🔥🔥</q> Signos repetidos y emojis como relleno.</li>
+          <li><q>Se ruega enviar el archivo en formato vectorial.</q> Tercera persona y tono de trámite.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="panel" style="margin-top:clamp(20px,3vw,28px)">
+      <h3>Reglas rápidas de escritura</h3>
+      <p class="nota">Vos, nunca tú ni usted. Precios con punto de miles y signo adelante: <span class="mono">$12.500</span>. Medidas con espacio antes de la unidad: <span class="mono">180 g/m²</span>, <span class="mono">160 °C</span>. <strong>DTF</strong> siempre en mayúsculas, y la primera vez en una pieza larga se aclara qué es. Los talles en mayúscula sin puntos: <span class="mono">S, M, L, XL, XXL</span>. Un emoji por pieza como máximo, y solo en redes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ 09 -->
+<section class="sec" id="aplicaciones">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-n">09 — Aplicaciones</span>
+      <h2 class="d2">La marca puesta a trabajar</h2>
+      <p class="lead">Cuatro piezas que vas a necesitar desde el primer mes. Son bocetos de referencia: las proporciones y las jerarquías son las que importan.</p>
+    </div>
+
+    <div class="apps">
+      <div class="app">
+        <div class="app-art">
+          <div class="etiq">
+            <div class="marca">Vestí Tu Negocio</div>
+            <div>CÓRDOBA · ARGENTINA</div>
+            <hr>
+            <div>ALGODÓN 180 G/M²</div>
+            <div>TALLE&nbsp;&nbsp;M</div>
+            <div class="cuidados" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3.2 9.4h17.6v6.4a4 4 0 0 1-4 4H7.2a4 4 0 0 1-4-4V9.4Z"></path><path d="M6.6 14c1.6-1.2 3.2-1.2 4.8 0s3.2 1.2 4.8 0"></path></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 8.5 12 4l8 4.5v7L12 20l-8-4.5Z"></path></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 16h16l-2.2-7.5a2 2 0 0 0-1.9-1.4H8.1a2 2 0 0 0-1.9 1.4Z"></path><path d="m7 5 1.6 2"></path></svg>
+            </div>
+            <div>LAVAR DEL REVÉS · NO PLANCHAR<br>SOBRE LA ESTAMPA</div>
+            <hr>
+            <div>VESTITUNEGOCIO.COM.AR</div>
+          </div>
+        </div>
+        <p class="app-txt"><b>Etiqueta de prenda</b>Mono sobre papel, 45 × 70 mm. Toda la info en IBM Plex Mono: es la pieza donde el tono de taller tiene que leerse más fuerte.</p>
+      </div>
+
+      <div class="app">
+        <div class="app-art">
+          <div class="tarjeta">
+            <svg width="30" height="30" style="color:#FFFFFF;--iso-hueco:#15131A" aria-hidden="true"><use href="#iso-plano"></use></svg>
+            <div>
+              <div class="nom">Vestí<em>Tu Negocio</em></div>
+              <div class="dat" style="margin-top:7px">WhatsApp +54 9 351 000-0000<br>@vestitunegocio · Córdoba Capital</div>
+            </div>
+          </div>
+        </div>
+        <p class="app-txt"><b>Tarjeta</b>85 × 55 mm, fondo tinta. El isotipo arriba a la izquierda, los datos abajo en mono. Dorso en magenta pleno con el isotipo calado al centro.</p>
+      </div>
+
+      <div class="app">
+        <div class="app-art">
+          <div class="firma">
+            <svg width="40" height="40" aria-hidden="true"><use href="#iso"></use></svg>
+            <div>
+              <div class="l">Vestí<em>Tu Negocio</em></div>
+            </div>
+            <div class="d">WhatsApp<br>+54 9 351 000-0000<br>vestitunegocio.com.ar</div>
+          </div>
+        </div>
+        <p class="app-txt"><b>Firma de email</b>Máximo 330 px de ancho. Isotipo, nombre y tres líneas de datos separadas por una regla magenta de 2 px. Sin foto y sin frase motivacional.</p>
+      </div>
+
+      <div class="app">
+        <div class="app-art" style="background:#15131A">
+          <div style="width:150px;aspect-ratio:1;background:#D6006E;display:grid;place-items:center;border-radius:50%">
+            <svg width="76" height="76" style="color:#FFFFFF;--iso-hueco:#D6006E" aria-hidden="true"><use href="#iso-plano"></use></svg>
+          </div>
+        </div>
+        <p class="app-txt"><b>Perfil de redes</b>Magenta pleno con el isotipo calado en blanco, centrado. El archivo <span class="mono">perfil-redes-1000.png</span> ya está armado para que el recorte circular no coma nada.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ 10 -->
+<section class="sec" id="archivos">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-n">10 — Archivos</span>
+      <h2 class="d2">Qué hay y para qué sirve</h2>
+      <p class="lead">Todo está en el repositorio del sitio. Los SVG son los originales: escalan sin perder calidad y se abren en Illustrator, Figma, Canva o cualquier navegador.</p>
+    </div>
+
+    <div class="tabla-scroll">
+      <table class="archivos">
+        <thead>
+          <tr><th>Archivo</th><th>Formato</th><th>Para qué</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="f">brand/logo-horizontal.svg</td><td>SVG</td><td>Versión principal. Web, cartelería, membrete, firma. Texto en curvas.</td></tr>
+          <tr><td class="f">brand/logo-horizontal-blanco.svg</td><td>SVG</td><td>Horizontal a un color blanco, marca calada. Fondos oscuros y estampado.</td></tr>
+          <tr><td class="f">brand/logo-horizontal-tinta.svg</td><td>SVG</td><td>Horizontal a un color tinta. Facturas, sellos, fotocopias.</td></tr>
+          <tr><td class="f">brand/logo-vertical.svg</td><td>SVG</td><td>Espacios altos y angostos: bolsas, banners, etiquetas colgantes.</td></tr>
+          <tr><td class="f">brand/logo-vertical-blanco.svg</td><td>SVG</td><td>Vertical a un color blanco, marca calada.</td></tr>
+          <tr><td class="f">brand/logo-wordmark.svg</td><td>SVG</td><td>Solo el nombre, en una línea. Encabezados anchos y bajos.</td></tr>
+          <tr><td class="f">brand/logo-*.png</td><td>PNG</td><td>Los mismos lockups rasterizados a 2000 px, fondo transparente. Para Instagram, Canva y WhatsApp.</td></tr>
+          <tr><td class="f">brand/logo-isotipo.svg</td><td>SVG</td><td>Solo la placa. Avatar, favicon, estampa chica.</td></tr>
+          <tr><td class="f">brand/isotipo-mono-blanco.svg</td><td>SVG</td><td>Un solo color, marca calada. Para fondos oscuros y estampado a un color.</td></tr>
+          <tr><td class="f">brand/isotipo-mono-tinta.svg</td><td>SVG</td><td>Un solo color sobre fondos claros. Sellos, facturas, fotocopias.</td></tr>
+          <tr><td class="f">brand/isotipo-magenta-1024.png</td><td>PNG 1024</td><td>Original en mapa de bits, fondo transparente. Para quien no abre SVG.</td></tr>
+          <tr><td class="f">brand/perfil-redes-1000.png</td><td>PNG 1000</td><td>Foto de perfil de Instagram, Facebook y WhatsApp Business.</td></tr>
+          <tr><td class="f">favicon.svg · favicon.ico</td><td>SVG · ICO</td><td>Icono de la pestaña del navegador. El ICO trae 16, 32 y 48 px.</td></tr>
+          <tr><td class="f">apple-touch-icon.png</td><td>PNG 180</td><td>Icono al agregar el sitio a la pantalla de inicio en iPhone.</td></tr>
+          <tr><td class="f">icon-192.png · icon-512.png</td><td>PNG</td><td>Android y buscadores. Declarados en site.webmanifest.</td></tr>
+          <tr><td class="f">tools/generar-iconos.mjs</td><td>Script</td><td>Regenera los iconos web y el ICO: <span class="mono">npm run iconos</span></td></tr>
+          <tr><td class="f">tools/generar-logos.mjs</td><td>Script</td><td>Rearma los lockups desde la fuente y pasa el texto a curvas: <span class="mono">npm run logos</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="panel" style="margin-top:clamp(22px,3vw,30px)">
+      <h3>Antes de mandar algo a imprenta</h3>
+      <p class="nota"><strong>El texto ya está en curvas.</strong> Los lockups no dependen de ninguna fuente instalada: las letras son contornos vectoriales, no texto. Se abren igual en Illustrator, Figma, Canva, Word o cualquier navegador, y cualquier imprentero los puede usar sin pedirte la tipografía. La contra es que no se pueden editar como texto: si alguna vez cambia el nombre, hay que volver a generarlos con <span class="mono">npm run logos</span>.</p>
+      <p class="nota" style="margin-top:.9rem"><strong>Pedí siempre una prueba impresa.</strong> El magenta #D6006E en pantalla y el magenta sobre tela o papel no son el mismo color, y la diferencia se nota más en este tono que en cualquier otro de la paleta.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Manual de marca Vestí Tu Negocio · Versión 1.0 · Córdoba Capital, Argentina
+  </div>
+</footer>

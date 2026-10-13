@@ -13,3 +13,6 @@ node_modules/
 
 # Salidas temporales
 artifact.html
+
+# Fuente que baja sola el generador de logos (OFL, se re-descarga)
+tools/*.ttf

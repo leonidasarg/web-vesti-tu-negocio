@@ -1,0 +1,16 @@
+{
+  "name": "web-vesti-tu-negocio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page y assets de marca de Vestí Tu Negocio",
+  "type": "module",
+  "scripts": {
+    "build": "bash src/build.sh",
+    "iconos": "node tools/generar-iconos.mjs",
+    "logos": "node tools/generar-logos.mjs && node tools/generar-logos-png.mjs",
+    "drive": "powershell -ExecutionPolicy Bypass -File tools/copiar-a-drive.ps1"
+  },
+  "devDependencies": {
+    "opentype.js": "^2.0.0"
+  }
+}
